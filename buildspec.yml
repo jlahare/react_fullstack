@@ -2,7 +2,6 @@ version: 0.1
 
 phases:
   install:
- 
     commands:
       - echo "installing nodejs"
       - npm i npm@latest -g
@@ -19,6 +18,8 @@ phases:
   post_build:
     commands:
       - echo PostBuild Phase
-  artifacts:
-    files:
-      - buildOutput/build.zip
+artifacts:
+  files:
+    - '**/*'
+  name:
+    - myBuild.zip
