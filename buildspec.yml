@@ -1,7 +1,7 @@
 --- 
 artifacts: 
   files: 
-    - build.zip
+    - '**/*'
 phases: 
   build: 
     commands: 
