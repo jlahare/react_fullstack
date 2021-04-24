@@ -19,3 +19,6 @@ phases:
   post_build:
     commands:
       - echo PostBuild Phase
+  artifacts:
+    files:
+      - buildOutput/build.zip
