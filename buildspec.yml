@@ -2,8 +2,8 @@
 artifacts: 
   files: 
     - build/*
-  packaging: 
-    - 'ZIP'
+  discard-paths: yes
+  base-directory: 'build'
 phases: 
   build: 
     commands: 
