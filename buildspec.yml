@@ -22,4 +22,4 @@ artifacts:
   files:
     - '**/*'
   name:
-    - myBuild.zip
+    - "myBuild"
