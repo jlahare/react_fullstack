@@ -1,7 +1,11 @@
 --- 
 artifacts: 
   files: 
-    - 'build/*'
+    - build/*
+  name: 
+    - build.zip
+  packaging: 
+    - ZIP
 phases: 
   build: 
     commands: 
