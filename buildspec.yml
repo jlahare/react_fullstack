@@ -1,7 +1,8 @@
 --- 
 artifacts: 
   files: 
-    - "*/**"
+    - buildspec.yml
+    - build/*
 phases: 
   build: 
     commands: 
