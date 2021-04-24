@@ -20,6 +20,4 @@ phases:
       - echo PostBuild Phase
 artifacts:
   files:
-    - '**/*'
-  name:
-    - "myBuild"
+    - target/myBuild.zip
