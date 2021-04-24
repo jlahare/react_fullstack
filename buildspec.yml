@@ -3,9 +3,9 @@ artifacts:
   files: 
     - build/*
   name: 
-    - build.zip
+    - 'build.zip'
   packaging: 
-    - ZIP
+    - 'ZIP'
 phases: 
   build: 
     commands: 
