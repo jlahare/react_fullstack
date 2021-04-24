@@ -3,7 +3,7 @@ artifacts:
   files: 
     - build/*
     - appspec.yml
-    - /scripts/*
+  discard-paths: yes
 phases: 
   build: 
     commands: 
