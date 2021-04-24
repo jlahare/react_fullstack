@@ -1,6 +1,6 @@
 {
   "name": "full_stack_app",
-  "homepage": ".",
+  "homepage": "./",
   "start_url": "/",
   "version": "0.1.0",
   "private": true,
