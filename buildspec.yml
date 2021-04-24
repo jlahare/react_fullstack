@@ -3,7 +3,7 @@ artifacts:
   files: 
     - build/*
     - appspec.yml
-    - /scripts
+    - /scripts/*
 phases: 
   build: 
     commands: 
