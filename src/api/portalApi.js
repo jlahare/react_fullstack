@@ -1,4 +1,5 @@
 import axios from 'axios';
+const BASE_URL = 'http://localhost:3002';
 
 async function postPerson(nameValue, countryValue) {
     const config = {
@@ -11,7 +12,7 @@ async function postPerson(nameValue, countryValue) {
     params.append('name', nameValue)
     params.append('country', countryValue)
 
-    const res = await axios.post('http://localhost:3000/person/addPerson', params, config)
+    const res = await axios.post(`${BASE_URL}/person/addPerson`, params, config)
     .then((response) => {
         console.log('respone i received is ' + JSON.stringify(response));
         return response;
@@ -23,8 +24,7 @@ async function postPerson(nameValue, countryValue) {
 }
 
 async function getPersons() {
-
-    const res =  await axios.get('http://localhost:3000/person/getPersons')
+    const res =  await axios.get(`${BASE_URL}/person/getPersons`)
     .then((response) => {
         console.log('respone i received is ' + JSON.stringify(response));
         return response;
