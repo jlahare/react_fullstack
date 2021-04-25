@@ -1,7 +1,5 @@
 --- 
 artifacts: 
-  files: 
-    - '**/*'
   secondary-artifacts:
     artifact1:
       files:
