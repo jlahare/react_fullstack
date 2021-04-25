@@ -1,14 +1,9 @@
 --- 
 artifacts: 
-  base-directory: '.'
-  secondary-artifects:
-     artifect1:
-        files: 
-          - '**/*'
-        base-directory: 'build'
-      artifect2:
-        files: 
-          -appspec.yml
+  files: 
+      - '**/*'
+    base-directory: 'build'
+    discard-paths: no
 phases: 
   build: 
     commands: 
@@ -21,6 +16,7 @@ phases:
   post_build: 
     commands: 
       - "echo PostBuild Phase"
+      - "cp appspec.yml build/appspec.yml"
   pre_build: 
     commands: 
       - "echo Pre_build Phase"
