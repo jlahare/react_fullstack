@@ -3,7 +3,6 @@ artifacts:
   files:
     - 'build/**/*'
     - appspec.yml
-  base-directory: 'build'
   discard-paths: yes
 phases: 
   build: 
