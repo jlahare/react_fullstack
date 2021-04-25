@@ -1,9 +1,9 @@
 --- 
 artifacts: 
   files: 
-      - '**/*'
-    base-directory: 'build'
-    discard-paths: no
+    - '**/*'
+  base-directory: 'build'
+  discard-paths: no
 phases: 
   build: 
     commands: 
