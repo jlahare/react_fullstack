@@ -1,21 +1,10 @@
 --- 
 artifacts: 
   files:
-     - appspec.yml
-  exclude-paths: 
-     - 'node_modules'
-     - '.git'
-  secondary-artifacts:
-    build-artifect:
-      files:
-        - '**/*'
-      base-directory: 'build'
-      discard-paths: no
-      name: build-artifect
-    appspec-artifact:
-      files:
-        - appspec.yml
-      name: appspec-artifact
+    - 'build/**/*'
+    - appspec.yml
+  base-directory: 'build'
+  discard-paths: yes
 phases: 
   build: 
     commands: 
