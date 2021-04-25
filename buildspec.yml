@@ -1,5 +1,6 @@
 --- 
 artifacts: 
+  base-directory: '.'
   secondary-artifects:
      artifect1:
         files: 
