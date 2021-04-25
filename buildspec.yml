@@ -1,5 +1,7 @@
 --- 
 artifacts: 
+  files: 
+    - appspec.yml
   secondary-artifacts:
     artifact1:
       files:
@@ -7,10 +9,6 @@ artifacts:
       base-directory: 'build'
       discard-paths: no
       name: build-artifect
-    artifact2:
-      files:
-        - appspec.yml
-      name: appspec-artifect
 phases: 
   build: 
     commands: 
